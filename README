@@ -1,0 +1,15 @@
+# Usage
+```
+make
+./main raw_image
+```
+
+Create raw grayscale image data with ImageMagick:
+```
+convert test.jpg -depth 8 -size [width]x[height] gray:test.raw
+```
+
+Convert raw images back to viewable format:
+```
+convert -depth 8 -size [width]x[height] gray:test.raw test.jpg
+```
